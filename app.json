@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Asset Track",
+    "slug": "asset-track",
+    "scheme": "assettrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Asset Track memerlukan akses galeri untuk foto aset.",
+          "cameraPermission": "Asset Track memerlukan akses kamera."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFFFFF",
+          "image": "./assets/images/assettrack-logo.png",
+          "imageWidth": 200
+        }
+      ],
+      "expo-sqlite",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.assettrack.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
